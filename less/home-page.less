@@ -1,10 +1,21 @@
 .home {
 
+  header {
+
+    h2 {
+      padding: 1% 0;
+    }
+    
+    p {
+      padding: 1% 0 2% 0;
+      border-bottom: 2px dashed @silver;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
-    display: flex;
+    .flex(space-between, stretch);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .text-content {
       width: 48%;
@@ -48,12 +59,15 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex(space-between, stretch);
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    .btn {
+      .buttons(white, @button-bg)
     }
   }
 }// home

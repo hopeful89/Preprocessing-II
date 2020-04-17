@@ -1,13 +1,11 @@
 // Navigation Styles here
+@import 'mixins';
+@import 'variables';
 
 nav {
     .flex(space-between, center);
     position: relative;
-
-    p{
-
-        font-size: 4.5rem;
-    }
+    height: 10vh;
 
     div {
         .flex(space-around, center);
@@ -19,7 +17,7 @@ nav {
             text-decoration: none;
 
             &:hover {
-                color: tint(@silver, 30%); 
+                color: tint(@navigation-border, 30%); 
             }
         }
     }
@@ -29,7 +27,7 @@ nav::after {
     content:'';
     margin: 0 -160px;
     position: absolute;
-    border: 2px dashed @silver;
+    border: 2px dashed @navigation-border;
     width: 140%;
     bottom: 0;
     left: 0;
