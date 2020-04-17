@@ -175,11 +175,23 @@ nav {
   position: relative;
   height: 10vh;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 nav div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 50%;
+}
+@media (max-width: 500px) {
+  nav div {
+    width: 100%;
+    margin: 1% 0 0 0;
+  }
 }
 nav div a {
   font-size: 2rem;
@@ -208,6 +220,11 @@ nav::after {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
 .home header h2 {
   padding: 1% 0;
 }
@@ -222,20 +239,47 @@ nav::after {
   align-items: stretch;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    padding: 0;
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -259,9 +303,20 @@ nav::after {
   justify-content: space-between;
   align-items: stretch;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+  }
 }
 .home .content-pick .btn {
   color: white;
@@ -271,4 +326,12 @@ nav::after {
   font-size: 2rem;
   border-radius: 15px;
   line-height: 2;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 100%;
+  }
+}
+.home .content-pick .btn:hover {
+  background: #4cd3e9;
 }

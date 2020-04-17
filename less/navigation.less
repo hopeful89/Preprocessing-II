@@ -7,9 +7,19 @@ nav {
     position: relative;
     height: 10vh;
 
+    @media @phone{
+        flex-direction: column;
+        justify-content: center;
+    }
+
     div {
         .flex(space-around, center);
         width: 50%;
+
+        @media @phone {
+            width: 100%;
+            margin: 1% 0 0 0;
+        }
 
 
         a {

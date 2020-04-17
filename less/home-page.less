@@ -1,5 +1,9 @@
 .home {
 
+  @media @phone {
+    width: 90%;
+  }
+
   header {
 
     h2 {
@@ -17,17 +21,38 @@
     .flex(space-between, stretch);
     flex-wrap: wrap;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        padding: 0;
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+
+        @media @phone {
+          width: 100%;
+        }
+        
       }
     }
   }
@@ -35,6 +60,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -61,13 +90,31 @@
     border-top: 2px dashed @navigation-border;
     .flex(space-between, stretch);
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        
+        width: 90%;
+      }
     }
 
     .btn {
-      .buttons(white, @button-bg)
+      .buttons(white, @button-bg);
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    .btn:hover {
+      background: @btn-hover;
     }
   }
 }// home
