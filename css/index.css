@@ -208,6 +208,7 @@ nav div {
 nav div a {
   font-size: 2rem;
   text-decoration: none;
+  color: black;
 }
 nav div a:hover {
   color: #d3d3d3;
