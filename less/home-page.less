@@ -4,6 +4,10 @@
     width: 90%;
   }
 
+  @media @tablet {
+    width: 95%;
+  }
+
   header {
 
     h2 {
@@ -80,6 +84,14 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+    }
+
+    @media @tablet {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -95,13 +107,21 @@
       align-items: center;
     }
 
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
       @media @phone {
-        
         width: 90%;
+      }
+
+      @media @tablet {
+        width: 95%;
       }
     }
 
@@ -109,6 +129,10 @@
       .buttons(white, @button-bg);
 
       @media @phone {
+        width: 100%;
+      }
+
+      @media @tablet {
         width: 100%;
       }
     }
